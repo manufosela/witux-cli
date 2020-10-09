@@ -10,6 +10,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "puppeteer": "^5.3.1",
-    "yargs": "^16.0.3"
+    "yargs": "^16.0.3",
+    "es-dev-server": "^1.57.7",
+    "koa": "^2.13.0"
   }
 }
