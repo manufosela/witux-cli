@@ -16,13 +16,13 @@ export const HTMLbody = /*html*/`
         ${data.banners.map(CommonTpl.bannerTpl).join('')}
       </kw-banner>
 
-      <h2>${data._base.fake.title}</h2>
+      <h2>${data._base[CommonTpl.language.lang].fake.title}</h2>
       <h1>CAMBIAR POR EL CONTENIDO HTML DE LA PÁGINA</h1>
       
     </main>
     <footer>
         <kw-footer country="España">
-          ${CommonTpl.drawKairosDS(data.footer.kairosds[LANG])}
+          ${CommonTpl.drawKairosDS(data.footer.kairosds[CommonTpl.language.lang])}
           ${CommonTpl.drawCountries(data.footer.countries)}
           ${CommonTpl.drawLogos(data.footer.logos)}
           ${CommonTpl.drawTerminos(data.footer.terminos)}
