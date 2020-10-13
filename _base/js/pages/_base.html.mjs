@@ -5,7 +5,7 @@ CommonTpl.setData(data);
 
 export const HTMLbody = /*html*/`
     <header>
-      <kw-header languages="${language.lang}">
+      <kw-header languages="${CommonTpl.language.lang}">
         <ul>
           ${CommonTpl.getMenuItems()}
         </ul>
@@ -16,8 +16,9 @@ export const HTMLbody = /*html*/`
         ${data.banners.map(bannerTpl).join('')}
       </kw-banner>
 
-      <h1>QUITAR ESTA LÍNEA POR EL CONTENIDO HTML DE LA PÁGINA</h1>
-
+      <h2>${data.fake.title}</h2>
+      <h1>CAMBIAR POR EL CONTENIDO HTML DE LA PÁGINA</h1>
+      
     </main>
     <footer>
         <kw-footer country="España">
