@@ -13,7 +13,7 @@ export const HTMLbody = /*html*/`
     </header>
     <main role="main" class="homepage">
       <kw-banner id="Banner" banner-size="large" animation-type="slide-toleft" change-interval="8">
-        ${data.banners.map(bannerTpl).join('')}
+        ${data.banners.map(CommonTpl.bannerTpl).join('')}
       </kw-banner>
 
       <h2>${data.fake.title}</h2>
