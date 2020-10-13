@@ -16,7 +16,7 @@ export const HTMLbody = /*html*/`
         ${data.banners.map(CommonTpl.bannerTpl).join('')}
       </kw-banner>
 
-      <h2>${data.fake.title}</h2>
+      <h2>${data._base.fake.title}</h2>
       <h1>CAMBIAR POR EL CONTENIDO HTML DE LA PÁGINA</h1>
       
     </main>
