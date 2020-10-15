@@ -4,8 +4,6 @@
 
 ## Tools
 *[liNuxt](https://www.npmjs.com/package/linuxt)*, the command line interface to generate static pages
-*[generator-lit-element](https://www.npmjs.com/package/generator-lit-element-base)*, a yeoman generator to create a lit-element web-component scafolding
-*[generator-linuxt-pages]()*, a yeoman generator to create a HTML page scafolding 
 
 ## Install like global cli
 
@@ -23,4 +21,9 @@ $ linuxt build [--port PORT] [--workdir WORKDIR]
 ### Generate new Page
 ```
 $ linuxt create-page PAGENAME
+```
+
+### Generate wenb-component
+```
+$ linuxt create-wc WC-NAME
 ```

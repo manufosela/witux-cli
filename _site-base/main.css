@@ -1,0 +1,210 @@
+/** COMMON **/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'AvenirLTPro', sans-serif;
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    margin: 0;
+}
+
+@media all and (min-width: 768px) { 
+    main {
+        padding-top: var(--header-height);
+    }
+}
+
+/** VARIABLES FONTS AND SIZES **/
+:root {
+  --main-font-family: 'AvenirLTPro', sans-serif;
+  --button-font-family: 'HelveticaNeueBold';
+  --link-font-family: 'AvenirLTPro-Heavy';
+  --base-font-size: 1.125rem; /* 18px */
+  --base-line-height: 1.8125rem; /* 29px */
+  --button-font-size: 1rem; /* 16px */
+  --button-line-height: 1.1;
+  --link-font-size: 1rem; /* 16px */
+  --link-line-height: 1.1;
+  --section-heading-font-size: 1.750rem; /* 28px */
+  --section-heading-line-height: 2.375rem; /* 38px */
+  --font-size-xxxl: 6.125rem; /* 98px */
+  --font-size-xl: 3rem; /* 48px */
+  --font-size-l: 1.875rem; /* 30px */
+  --font-size-m: 1rem; /* 16px */
+  --font-size-s: 0.875rem; /* 14px */
+  --line-height-xl: 3.125rem; /* 58px */
+  --line-height-l: 4.125rem; /* 66px */
+  --line-height-m: 1.5rem; /* 24px */
+  --line-height-s: 1.125rem; /* 18px */
+}
+
+/** GRID **/
+.container {
+  width: auto;
+  margin: 0 var(--out-wrapper-margin-mobile);
+}
+
+.section-container {
+  margin-bottom: 120px;
+}
+
+.col-sm-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 0 var(--out-wrapper-margin-desktop);
+  }
+  .section-container {
+    margin-bottom: 154px;
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .offset-lg-1 {
+    margin-left: 8.333333%;
+  }
+}
+
+/** TYPOGRAPHY **/
+@font-face {
+  font-family: 'AvenirLTPro';
+  src: url('../assets/fonts/AvenirLTPro-Roman.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/AvenirLTPro-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/AvenirLTPro-Roman.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Roman.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/AvenirLTPro-Roman.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AvenirLTPro-Black';
+  src: url('../assets/fonts/AvenirLTPro-Black.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/AvenirLTPro-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/AvenirLTPro-Black.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Black.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/AvenirLTPro-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AvenirLTPro-Heavy';
+  src: url('../assets/fonts/AvenirLTPro-Heavy.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/AvenirLTPro-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/AvenirLTPro-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/AvenirLTPro-Heavy.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AvenirLTPro-Light';
+  src: url('../assets/fonts/AvenirLTPro-Light.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/AvenirLTPro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/AvenirLTPro-Light.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Light.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/AvenirLTPro-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AvenirLTPro-LightOblique';
+  src: url('../assets/fonts/AvenirLTPro-LightOblique.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/AvenirLTPro-LightOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/AvenirLTPro-LightOblique.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-LightOblique.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../assets/fonts/AvenirLTPro-LightOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/AvenirLTPro-LightOblique.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url('../assets/fonts/HelveticaNeueBold.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/HelveticaNeueBold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/HelveticaNeueBold.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../assets/fonts/HelveticaNeueBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/HelveticaNeueBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'JOURNAL';
+  src: url('../assets/fonts/JOURNAL.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/JOURNAL.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../assets/fonts/JOURNAL.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../assets/fonts/JOURNAL.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../assets/fonts/JOURNAL.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../assets/fonts/JOURNAL.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html,
+body {
+  font-family: 'AvenirLTPro', sans-serif;
+}
+
+h1 {
+  font-family: 'JOURNAL';
+}
+
+h3 {
+  font-family: 'HelveticaNeueBold', sans-serif;
+}
+
+footer {
+  font-family: 'AvenirLTPro', sans-serif;
+}
+
+
+/** VARIABLES **/
+:root {
+  --main-color: #FF7900;
+  --main-text-color: #4d4d4e;
+  --main-color-with-opacity: #ffb566;
+  --secondary-color: #0E3540;
+  --secondary-text-color: #4D4D4E;
+  --error-color: #AE0000;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --dark-grey: #727272;
+  --dark-grey-button: #575756;
+  --light-grey: #D2D2D2;
+  --light-grey-2: #F2F2F2;
+  --background-grey: #F0F0F0;
+  --background-carousel: #464545;
+  --color-dev-capacity: #035762;
+  --color-agile-capacity: #e4af43;
+  --color-devops-capacity: #b92e52;
+  --color-design-capacity: #23b77e;
+  --header-height: 60px;
+  --out-wrapper-margin-desktop: 9.26%;
+  --out-wrapper-margin-mobile: 15px;
+  --section-content-margin-bottom: 70px;
+  --section-heading-margin-bottom: 35px;
+}
