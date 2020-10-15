@@ -3,29 +3,15 @@ import {CommonTpl} from './common.html.mjs';
 
 CommonTpl.setData(data);
 
-export const HTMLbody = /*html*/`
-    <header>
-      <kw-header languages="${CommonTpl.language.lang}">
-        <ul>
-          ${CommonTpl.getMenuItems()}
-        </ul>
-      </kw-header>
-    </header>
-    <main role="main" class="homepage">
-      <kw-banner id="Banner" banner-size="large" animation-type="slide-toleft" change-interval="8">
-        ${data.banners.map(CommonTpl.bannerTpl).join('')}
-      </kw-banner>
+const pageData = data._base[CommonTpl.language.lang];
 
-      <h2>${data._base[CommonTpl.language.lang].fake.title}</h2>
+export const HTMLbody = /*html*/`
+    ${CommonTpl.titleTpl(pageData.header)}
+    <main role="main" class="homepage">
       <h1>CAMBIAR POR EL CONTENIDO HTML DE LA PÁGINA</h1>
-      
+      <mi-componente1></mi-componente1>
     </main>
     <footer>
-        <kw-footer country="España">
-          ${CommonTpl.drawKairosDS(data.footer.kairosds[CommonTpl.language.lang])}
-          ${CommonTpl.drawCountries(data.footer.countries)}
-          ${CommonTpl.drawLogos(data.footer.logos)}
-          ${CommonTpl.drawTerminos(data.footer.terminos)}
-        </kw-footer>
+      Linuxt - ${new Date().getFullYear()}
     </footer>
 `;
