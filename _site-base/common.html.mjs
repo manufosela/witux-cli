@@ -4,7 +4,8 @@ export class CommonTpl {
   constructor() {
     this.data = {};
     this.language = {};
-    this.this.LANG = 'es';
+    this.defaultLang = window.navigator.language;
+    this.LANG = this.defaultLang;
   }
 
   static setData(data) {
@@ -13,6 +14,13 @@ export class CommonTpl {
   static setLanguage(language) {
     this.language = language;
     this.LANG = this.language.lang;
+  }
+  static detectLanguage() {
+    const location = document.location;
+    const pathname = location.pathname;
+    const pathparts = pathname.split('/');
+    const lang = pathparts[1] === '' ? this.defaultLang : pathparts[1];
+    this.setLanguage({lang: lang});
   }
 
   static titleTpl(header) {
@@ -24,5 +32,3 @@ export class CommonTpl {
     `;
   }
 }
-
-CommonTpl.setLanguage(language);
