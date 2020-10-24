@@ -2,8 +2,10 @@ import data from '../../json/_base.json.js'; /* FUENTE DE DATOS JSON */
 import {CommonTpl} from './common.html.mjs';
 
 CommonTpl.setData(data);
+CommonTpl.detectLanguage();
+console.info(`LANG: ${CommonTpl.LANG}`);
 
-const pageData = data._base[CommonTpl.language.lang];
+const pageData = data._base[CommonTpl.LANG];
 
 export const HTMLbody = /*html*/`
     ${CommonTpl.titleTpl(pageData.header)}

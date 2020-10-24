@@ -1,6 +1,6 @@
 {
   "name": "linuxt",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "liNuxt is a builder SSR pages with Lit-Elements",
   "main": "./lib/grelinuxtet.js",
   "bin": {

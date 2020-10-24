@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+.invisible {
+  display:none;
+}
+
+.loading {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  height: 100vh;
+  background-color: coral;
+}
+
 body {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);

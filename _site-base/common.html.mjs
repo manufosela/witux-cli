@@ -16,11 +16,13 @@ export class CommonTpl {
     this.LANG = this.language.lang;
   }
   static detectLanguage() {
-    const location = document.location;
-    const pathname = location.pathname;
-    const pathparts = pathname.split('/');
-    const lang = pathparts[1] === '' ? this.defaultLang : pathparts[1];
-    this.setLanguage({lang: lang});
+    const { pathname } = document.location;
+    const regExpAnalyzeUrl = /(\/?)(?<lang>[\w_-]*)\//;
+    const result = pathname.match(regExpAnalyzeUrl);
+    let { lang } = result.groups;
+    lang = (lang === '') ? 'es' : lang;
+    this.setLanguage({ lang });
+    return lang;
   }
 
   static titleTpl(header) {
