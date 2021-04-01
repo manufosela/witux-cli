@@ -6,6 +6,17 @@
   "bin": {
     "linuxt": "./bin/index.js"
   },
+  "scripts": {
+    "prepare": "husky install",
+    "format": "run-p format:*",
+    "format:eclint": "git ls-files | xargs eclint fix",
+    "format:eslint": "npm run lint:eslint -- --fix",
+    "format:prettier": "prettier \"*\" --write --ignore-path .eslintignore",
+    "lint": "run-p lint:*",
+    "lint:eclint": "git ls-files | xargs eclint check",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier \"*\" --check --ignore-path .eslintignore"
+  },
   "author": "manufosela",
   "license": "Apache-2.0",
   "dependencies": {
@@ -13,5 +24,24 @@
     "puppeteer": "^5.3.1",
     "shelljs": "^0.8.4",
     "yargs": "^16.0.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@open-wc/eslint-config": "^4.0.0",
+    "eclint": "^2.0.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsdoc": "^32.0.0",
+    "eslint-plugin-lit": "^1.0.0",
+    "eslint-plugin-lit-a11y": "^1.0.0",
+    "eslint-plugin-markdown": "^2.0.0",
+    "eslint-plugin-wc": "^1.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.0.0",
+    "npm-run-all": "^4.0.0",
+    "prettier": "^2.0.0"
   }
 }
