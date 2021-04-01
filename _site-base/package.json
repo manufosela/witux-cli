@@ -1,7 +1,7 @@
 {
-  "name": "kairos-web",
-  "version": "2.0.0-SNAPSHOT",
-  "description": "KairosDS website :)",
+  "name": "linuxt-web",
+  "version": "1.0.0",
+  "description": "LINUXT website :)",
   "main": "index.js",
   "scripts": {
     "analyze": "wca analyze \"./components/**/*.js\" --format json --outFile custom-elements.json",
@@ -33,7 +33,7 @@
     "think",
     "try"
   ],
-  "author": "KairosDS",
+  "author": "manufosela",
   "license": "Copyright",
   "bugs": {
     "url": "https://gitlab.com/kairosds/products/kairos-web/issues"
