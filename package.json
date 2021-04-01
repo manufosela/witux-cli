@@ -15,7 +15,8 @@
     "lint": "run-p lint:*",
     "lint:eclint": "git ls-files | xargs eclint check",
     "lint:eslint": "eslint .",
-    "lint:prettier": "prettier \"*\" --check --ignore-path .eslintignore"
+    "lint:prettier": "prettier \"*\" --check --ignore-path .eslintignore",
+    "release": "standard-version"
   },
   "author": "manufosela",
   "license": "Apache-2.0",
@@ -26,8 +27,8 @@
     "yargs": "^16.0.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.0.1",
-    "@commitlint/config-conventional": "^12.0.1",
+    "@commitlint/cli": "^12.0.0",
+    "@commitlint/config-conventional": "^12.0.0",
     "@open-wc/eslint-config": "^4.0.0",
     "eclint": "^2.0.0",
     "eslint": "^7.0.0",
@@ -42,6 +43,7 @@
     "husky": "^6.0.0",
     "lint-staged": "^10.0.0",
     "npm-run-all": "^4.0.0",
-    "prettier": "^2.0.0"
+    "prettier": "^2.0.0",
+    "standard-version": "^9.0.0"
   }
 }
