@@ -12,7 +12,7 @@
     "lint:fix": "eslint ./js --fix",
     "prestorybook": "npm run analyze",
     "start:strapi": "npm run strapi && webpack-dev-server --env.dev --mode development --open",
-    "start": "web dev-server --app-index index.html --node-resolve --watch --open --port 8081",
+    "start": "web-dev-server --app-index index.html --node-resolve --watch --open --port 8081",
     "start:dist": "web-dev-server --app-index index.html --node-resolve --watch --open --port 8082 --root-dir ../dist",
     "stop": "kill $(ps aux | grep 'node.*es-dev-server' | awk '{print $2}')",
     "storybook:build": "build-storybook",
