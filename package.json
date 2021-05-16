@@ -1,9 +1,9 @@
 {
   "name": "linuxt",
-  "version": "2.8.11",
+  "version": "2.8.12",
   "description": "liNuxt is a builder SSR pages with Lit-Elements",
   "type": "module",
-  "main": "./lib/grelinuxtet.cjs",
+  "main": "./lib/linuxt.cjs",
   "bin": {
     "linuxt": "./bin/index.cjs"
   },
@@ -21,7 +21,7 @@
     "test": "mocha test",
     "test:watch": "npm test -- --watch"
   },
-  "author": "manufosela",
+  "author": "majorfoca-team",
   "license": "Apache-2.0",
   "dependencies": {
     "@web/dev-server": "^0.1.10",
