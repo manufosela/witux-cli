@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-const linuxt = require('../lib/linuxt.js');
+const linuxt = require('../lib/linuxt.cjs');
 linuxt.init();
