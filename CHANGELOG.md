@@ -18,4 +18,8 @@ chore(README): update \_site-base/README.md with create-page command and fix som
 
 ### 2.10.7 (2022-02-27)
 
-feature(linuxt.cjs): modify create-page command, deleted .tpl.js files and put its content in page .mjs file
+feat(linuxt.cjs): modify create-page command, deleted .tpl.js files and put its content in page .mjs file
+
+### 2.10.8 (2022-02-27)
+
+fix(linuyxt.cjs): fix create-page languages
