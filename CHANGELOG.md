@@ -10,4 +10,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 2.10.5 (2022-02-27)
 
-fixed create-page command when no page is specified
+fix(linuxt.cjs): fixed create-page command when no page is specified
+
+### 2.10.6 (2022-02-27)
+
+chore(README): update \_site-base/README.md with create-page command and fix some typos
