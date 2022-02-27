@@ -15,3 +15,7 @@ fix(linuxt.cjs): fixed create-page command when no page is specified
 ### 2.10.6 (2022-02-27)
 
 chore(README): update \_site-base/README.md with create-page command and fix some typos
+
+### 2.10.7 (2022-02-27)
+
+feature(linuxt.cjs): modify create-page command, deleted .tpl.js files and put its content in page .mjs file

@@ -7,7 +7,7 @@ console.info(`LANG: ${CommonTpl.LANG}`);
 
 const pageData = data._base[CommonTpl.LANG];
 
-export const HTMLbody = /*html*/`
+const HTMLbody = /* html */`
     ${CommonTpl.titleTpl(pageData.header)}
     <main role="main" class="homepage">
       <h1>CAMBIAR POR EL CONTENIDO HTML DE LA PÁGINA</h1>
@@ -17,3 +17,9 @@ export const HTMLbody = /*html*/`
       Linuxt - ${new Date().getFullYear()}
     </footer>
 `;
+
+document.body.innerHTML = `
+<div id="loading" class="loading">CARGANDO....</div>  
+<div id="main">
+  ${HTMLbody}
+</div>`;
