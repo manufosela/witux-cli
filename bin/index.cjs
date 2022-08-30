@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-const linuxt = require('../lib/linuxt.cjs');
-linuxt.init();
+const witux = require('../lib/witux.cjs');
+witux.init();
