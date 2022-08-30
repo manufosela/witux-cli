@@ -1,11 +1,11 @@
 import data from '../../json/_base.json.js'; /* FUENTE DE DATOS JSON */
 import {CommonTpl} from './common.html.mjs';
 
-CommonTpl.setData(data);
-CommonTpl.detectLanguage();
-console.info(`LANG: ${CommonTpl.LANG}`);
+const lang = CommonTpl.LANG;
 
-const pageData = data._base[CommonTpl.LANG];
+const pageData = data._base[lang];
+window.WituxDATA.pageData = data._base[lang];
+
 
 const HTMLbody = /* html */`
     ${CommonTpl.titleTpl(pageData.header)}
@@ -14,7 +14,7 @@ const HTMLbody = /* html */`
       <mi-componente1></mi-componente1>
     </main>
     <footer>
-      Linuxt - ${new Date().getFullYear()}
+      witux - ${new Date().getFullYear()}
     </footer>
 `;
 

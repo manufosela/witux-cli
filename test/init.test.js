@@ -1,11 +1,11 @@
 import chai from 'chai';
-import linuxt from '../lib/linuxt.cjs';
+import witux from '../lib/witux.cjs';
 
 const { expect } = chai;
 
 
-describe('linuxt', () => {
+describe('witux', () => {
   it('init method', async () => {
-    expect(linuxt).to.haveOwnProperty('init').to.be.a('function');
+    expect(witux).to.haveOwnProperty('init').to.be.a('function');
   });
 });
