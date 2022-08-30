@@ -1,11 +1,11 @@
 {
-  "name": "linuxt",
-  "version": "2.10.8",
-  "description": "liNuxt is a builder SSR pages with Lit-Elements",
+  "name": "witux-cli",
+  "version": "1.0.0",
+  "description": "Witux. Web-components Interactive Tool UX is a builder SSR pages with Web Components",
   "type": "module",
-  "main": "./lib/linuxt.cjs",
+  "main": "./lib/witux.cjs",
   "bin": {
-    "linuxt": "./bin/index.cjs"
+    "witux": "./bin/index.cjs"
   },
   "scripts": {
     "prepare": "husky install",
@@ -21,13 +21,13 @@
     "test": "mocha test",
     "test:watch": "npm test -- --watch"
   },
-  "author": "majorfoca-team",
+  "author": "manufosela",
   "license": "Apache-2.0",
   "dependencies": {
-    "@web/dev-server": "^0.1.29",
-    "puppeteer": "^13.0.1",
-    "shelljs": "^0.8.4",
-    "yargs": "^17.3.1"
+    "@web/dev-server": "^0.1.34",
+    "puppeteer": "^17.0.0",
+    "shelljs": "^0.8.5",
+    "yargs": "^17.5.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
