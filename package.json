@@ -1,6 +1,6 @@
 {
   "name": "witux-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Witux. Web-components Interactive Tool UX is a builder SSR pages with Web Components",
   "type": "module",
   "main": "./lib/witux.cjs",
